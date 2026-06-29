@@ -2,6 +2,8 @@
 
 Registry for my [R-universe](https://bgreenwell.r-universe.dev) packages.
 
+> CRAN's increasingly stringent policies have made it impractical for independently maintaining multiple open-source R packages. R-universe offers a more accessible and flexible alternative for publishing and distributing R packages, and is where these packages are now hosted.
+
 ## Packages
 
 | Package | Description |
@@ -33,8 +35,3 @@ pak::pak("fastshap")
 pak::pak("bgreenwell/fastshap")
 ```
 
-**From CRAN** (stable releases):
-
-```r
-install.packages("fastshap")
-```
