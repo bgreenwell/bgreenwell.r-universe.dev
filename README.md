@@ -14,9 +14,27 @@ Registry for my [R-universe](https://bgreenwell.r-universe.dev) packages.
 
 ## Installation
 
+**From R-universe** (latest development versions, binaries available):
+
 ```r
-install.packages(
-    c("fastshap", "vip", "pdp", "investr", "sure"),
-    repos = c("https://bgreenwell.r-universe.dev", "https://cloud.r-project.org")
-)
+install.packages("fastshap", repos = c("https://bgreenwell.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+Or with [pak](https://pak.r-lib.org/):
+
+```r
+pak::repo_add("https://bgreenwell.r-universe.dev")
+pak::pak("fastshap")
+```
+
+**From GitHub** (development versions via pak):
+
+```r
+pak::pak("bgreenwell/fastshap")
+```
+
+**From CRAN** (stable releases):
+
+```r
+install.packages("fastshap")
 ```
